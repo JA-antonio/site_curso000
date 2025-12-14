@@ -1,12 +1,35 @@
+:root {
+    --color-h: #000000;
+    --gap-padrão: 3px;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 h1 , h2 , h3 {
-    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    color: var(--color-h);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main-bg {
+    color: var(--color-h);
+    background-image: url(../img/subtle-prism.png);
+    background-repeat: no-repeat;
+}
+
+.content-primary {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: var(--gap-padrão);
+}
+
+.section-full {
+    min-height: 100vh;
 }
