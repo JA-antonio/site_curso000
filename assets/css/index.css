@@ -1,6 +1,6 @@
 :root {
     --color-h: #000000;
-    --color-body: rgb(255, 255, 255);
+    --color-body: #ffffff;
     --gap-padrão: 3px;
 }
 
@@ -9,75 +9,3 @@
     padding: 0px;
 }
 
-body {
-    color: var(--color-body);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-h1 , h2 , h3 {
-    text-transform: uppercase;
-    color: var(--color-h);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.main-bg {
-    color: var(--color-h);
-    background-image: url(../img/subtle-prism.png);
-    background-repeat: no-repeat;
-}
-
-.content-primary {
-    margin: 0 auto;
-    max-width: 1000px;
-    padding: var(--gap-padrão);
-}
-
-.section-full {
-    min-height: 100vh;
-    margin-top: 55px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-body);
-    font-size: 1,8rem;
-}
-
-#customer-li::after {
-    content: '';
-    background: rgb(189, 0, 0);
-    height: 0.2rem;
-    width: 6%;
-    bottom: 0;
-    right: 5%;
-    position: absolute;
-    margin-right: 25rem;
-}
-
-#ul-main {
-    color: #C8E5E2;
-}
-
-#aside-main {
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    background-color: #a7a7a7;
-    height: 60px;
-    top: 0;
-    padding-left: 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.582);
-}
-
-aside > nav > ul {
-    display: flex;
-    justify-content: left;
-    margin-right: 5px;
-    list-style: none;
-}
-
-aside > nav > ul > li {
-    margin-right: 20px;
-}
