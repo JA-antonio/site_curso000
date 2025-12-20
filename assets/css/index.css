@@ -44,6 +44,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-around;
     width: 25rem;
+    position: relative;
 } 
 
 li {
@@ -53,6 +54,17 @@ li {
 a {
     text-decoration: none;
 }
+
+nav > section > ul > li::after {
+    content: '';
+    position: absolute;
+    background-color: blue;
+    bottom: -0.2rem;
+    height: 2px;
+    width: 20%;
+    left: 0px;
+}
+
 
 .config-sec-main {
     height: 100vh;
