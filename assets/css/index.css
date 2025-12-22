@@ -1,6 +1,5 @@
 :root {
     --color-h: #000000;
-    --color-body: #ffffff;
     --gap-padrão: 3px;
 }
 
@@ -11,12 +10,12 @@
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--color-body);
+    color: var(--color-h);
     overflow-x: hidden;
 }
 
 #nav-fixed {
-    background-color: aqua;
+    background-color: white;
     position: fixed;
     right: 0px;
     left: 0px;
@@ -25,7 +24,8 @@ body {
     display: flex;
     justify-content: space-between;
     color: var(--color-h);
-    font-weight: bold;
+    font-weight: bolder;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
 }
 
 .nav-sec-padrao {
@@ -53,12 +53,13 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--color-h);
 }
 
 nav > section > ul > li a::after {
     content: '';
     position: absolute;
-    background-color: white;
+    background-color: #BDE8E4;
     bottom: -0.2rem;
     height: 3px;
     left: 50%;
@@ -69,12 +70,4 @@ nav > section > ul > li a::after {
 nav > section > ul > li a:hover::after {
     width: 50%;
     left: 25%;
-}
-
-/*sections mains*/
-.config-sec-main {
-    height: 100vh;
-    width: 100vw;
-    background-image: url(../img/subtle-prism.png);
-    background-position: center center;
 }
